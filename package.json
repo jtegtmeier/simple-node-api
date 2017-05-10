@@ -2,9 +2,10 @@
   "name": "simple-node-api",
   "version": "1.0.0",
   "description": "An api built for the CodeBytes meetup",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/jtegtmeier/simple-node-api/issues"
   },
-  "homepage": "https://github.com/jtegtmeier/simple-node-api#readme"
+  "homepage": "https://github.com/jtegtmeier/simple-node-api#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.26"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
